@@ -1,0 +1,161 @@
+{
+ "price_insights": {
+  "price_history": true,
+  "currency": "INR",
+  "price_tracking_available": true,
+  "stores": [
+   {
+    "name": "Amazon.in",
+    "prices": [
+     {
+      "date": "Nov 21, 2025",
+      "price": 66900.0
+     },
+     {
+      "date": "Dec 15, 2025",
+      "price": 68900.0
+     },
+     {
+      "date": "Dec 16, 2025",
+      "price": 66990.0
+     },
+     {
+      "date": "Dec 28, 2025",
+      "price": 62590.0
+     },
+     {
+      "date": "Jan 2, 2026",
+      "price": 64900.0
+     },
+     {
+      "date": "Jan 5, 2026",
+      "price": 64590.0
+     },
+     {
+      "date": "Jan 8, 2026",
+      "price": 84900.0
+     },
+     {
+      "date": "Jan 14, 2026",
+      "price": 64900.0
+     },
+     {
+      "date": "Jan 22, 2026",
+      "price": 174900.0
+     },
+     {
+      "date": "Jan 23, 2026",
+      "price": 64900.0
+     },
+     {
+      "date": "Feb 13, 2026",
+      "price": 69900.0
+     },
+     {
+      "date": "Mar 19, 2026",
+      "price": 89900.0
+     },
+     {
+      "date": "Apr 10, 2026",
+      "price": 69900.0
+     },
+     {
+      "date": "Aug 30, 2026",
+      "price": 64900.0
+     },
+     {
+      "date": "Sep 1, 2026",
+      "price": 67490.0
+     },
+     {
+      "date": "Sep 8, 2026",
+      "price": 67900.0
+     },
+     {
+      "date": "Sep 9, 2026",
+      "price": 67490.0
+     },
+     {
+      "date": "Sep 17, 2026",
+      "price": 89900.0
+     },
+     {
+      "date": "Sep 23, 2026",
+      "price": 86900.0
+     },
+     {
+      "date": "Oct 8, 2026",
+      "price": 76999.0
+     },
+     {
+      "date": "Nov 6, 2026",
+      "price": 79990.0
+     },
+     {
+      "date": "Nov 22, 2026",
+      "price": 76990.0
+     }
+    ]
+   },
+   {
+    "name": "Poorvika",
+    "prices": [
+     {
+      "date": "Oct 5, 2026",
+      "price": 89900.0
+     }
+    ]
+   },
+   {
+    "name": "Croma",
+    "prices": [
+     {
+      "date": "Nov 21, 2025",
+      "price": 66990.0
+     },
+     {
+      "date": "Dec 28, 2025",
+      "price": 64590.0
+     },
+     {
+      "date": "Jan 7, 2026",
+      "price": 64900.0
+     },
+     {
+      "date": "Mar 30, 2026",
+      "price": 69900.0
+     },
+     {
+      "date": "Jun 15, 2026",
+      "price": 67990.0
+     },
+     {
+      "date": "Jun 26, 2026",
+      "price": 66490.0
+     },
+     {
+      "date": "Jul 29, 2026",
+      "price": 67490.0
+     },
+     {
+      "date": "Sep 6, 2026",
+      "price": 69900.0
+     }
+    ]
+   },
+   {
+    "name": "Apple",
+    "prices": [
+     {
+      "date": "Nov 21, 2025",
+      "price": 69900.0
+     },
+     {
+      "date": "Sep 10, 2026",
+      "price": 89900.0
+     }
+    ]
+   }
+  ]
+ }
+}
