@@ -95,7 +95,7 @@ export default function PriceHistoryChart({ data: initial }: { data: HistoryData
           <h3 className="text-sm font-semibold">📊 Price history · {h.product_name}</h3>
           <p className="mt-0.5 text-xs text-muted">
             {mode === "low" ? "Lowest price each month" : "Average price each month"}; dashed lines mark sales
-            {h.is_synthetic && <span className="ml-2 rounded bg-raised px-1.5 py-0.5 text-[10px]">demo data</span>}
+            {h.is_synthetic && <span className="ml-2 rounded bg-raised px-1.5 py-0.5 text-[10px]">Data history (synthetic)</span>}
           </p>
           {!h.is_synthetic && h.from_google && (
             <p className="mt-1 text-xs text-muted">

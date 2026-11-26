@@ -22,7 +22,7 @@ export default function ComparisonTable({ data }: { data: ComparisonData }) {
             </>
           )}
           {range && <span> · {data.rows.length} stores, {range}</span>}
-          {data.is_demo && <span className="ml-2 rounded bg-raised px-1.5 py-0.5 text-[10px]">demo data</span>}
+          {data.is_demo && <span className="ml-2 rounded bg-raised px-1.5 py-0.5 text-[10px]">sample listing</span>}
         </p>
       </header>
       <div className="scrollbar-thin overflow-x-auto">

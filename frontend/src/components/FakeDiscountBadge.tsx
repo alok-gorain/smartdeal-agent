@@ -67,7 +67,7 @@ export default function FakeDiscountBadge({ data }: { data: DiscountData }) {
           <p className="mt-1 flex items-center gap-1.5 text-[11px] text-muted">
             <PlatformBadge slug={p.platform} label={p.platform_label} size="xs" /> {data.product_name}
             {p.confidence === "low" && " · low confidence (short history)"}
-            {p.is_synthetic && " · demo data"}
+            {p.is_synthetic && " · Data history (synthetic)"}
           </p>
         </div>
         <ChevronDown className={`mt-0.5 h-4 w-4 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} aria-hidden />

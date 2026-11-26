@@ -304,4 +304,4 @@ def test_sample_products_keep_some_slots_after_live_results():
     demo = [{"name": f"demo {i}", "is_demo": True} for i in range(5)]
     picked = pick_results(live + demo, 8)
     assert [g["is_demo"] for g in picked] == [False] * 6 + [True] * 2  # live first, 2 sample slots
-    assert pick_results(demo, 8) == demo  # quick-search / no-key mode: all sample data
+    assert pick_results(demo, 8) == demo  # quick-search / no-key mode: seeded catalog results

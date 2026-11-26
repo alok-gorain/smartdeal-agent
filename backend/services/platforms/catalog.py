@@ -60,7 +60,7 @@ class CatalogAdapter(PlatformAdapter):
 
     def mode(self) -> str:
         if demo_data_enabled():
-            return "local database (demo data + tracked products)"
+            return "local database (sample catalog + tracked products)"
         return "local database (tracked live products)"
 
     @staticmethod

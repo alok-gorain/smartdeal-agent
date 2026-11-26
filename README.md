@@ -142,15 +142,15 @@ SmartDeal records every tracked product's price daily, but a newly found product
 
 The build cleaned and de-duplicated them and **added rows**: 295 colour variants, and offers at 1–3 more stores per product (8,399 listings). Neither source has price history, so the build also generates a **dummy dated 12-month history** (520,738 rows). That history mixes inflated-MRP "fake discounts", genuine drops and sale-season dips.
 
-The API loads the dataset once at startup (`SEED_PUBLIC_DATASET=true`) and shifts its dates to end on the load day. With `DEMO_CATALOG=true`, these products appear as **demo data**, after real results. See the folder's README for sources, licences and what is real versus synthetic. To rebuild:
+The API loads the dataset once at startup (`SEED_PUBLIC_DATASET=true`) and shifts its dates to end on the load day. With `DEMO_CATALOG=true`, these products appear as **sample listings**, after real results. See the folder's README for sources, licences and what is real versus synthetic. To rebuild:
 
 ```bash
 cd backend && python -I data_pipeline/build_public_dataset.py --promptcloud <flipkart_com-ecommerce_sample.csv> --zenodo <flipkart_product.csv>
 ```
 
-### Demo data
+### Data history
 
-Seeded products, prices and offers are **sample data** and are labelled "demo data" in the UI. Once a live source (e.g. `SERPAPI_KEY`) is set, demo products are hidden automatically and never matched with real ones.
+Seeded products and offers come from the local catalog; their generated price history is synthetic. The UI labels seeded products as "sample listing" and synthetic history as "Data history (synthetic)". Once a live source (e.g. `SERPAPI_KEY`) is set, demo products are hidden automatically and never matched with real ones.
 
 Real price history builds up from the day live sources are switched on: every searched product is stored and re-priced daily at 06:00 IST. Until a product has about a week of prices, the fake-discount check says "not enough data", and buy-timing needs about a month.
 

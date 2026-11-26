@@ -49,7 +49,7 @@ class ProductListing(Base):
     in_stock: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
     seller_name: Mapped[str | None] = mapped_column(String(300))
     delivery_info: Mapped[str | None] = mapped_column(String(300))
-    # "live" = from a real store/API, "demo" = seeded sample data
+    # "live" = from a real store/API, "demo" = from the seeded local catalog
     source: Mapped[str] = mapped_column(String(20), default="live", nullable=False)
     last_updated: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow, nullable=False

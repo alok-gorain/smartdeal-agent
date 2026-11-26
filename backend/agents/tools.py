@@ -186,7 +186,7 @@ async def compare_prices(product_name: str, product_id: Optional[int] = None) ->
     if savings:
         lines.append(f"Cheapest on {best['platform_label']}; saves up to ₹{max(s['amount'] for s in savings):,.0f}.")
     if group.get("is_demo"):
-        lines.append("NOTE: demo data.")
+        lines.append("NOTE: this is a sample listing.")
     return "\n".join(lines) + _errors_note(result["errors"]), {"kind": "comparison", "data": data}
 
 

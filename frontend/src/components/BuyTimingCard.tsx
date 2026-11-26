@@ -19,7 +19,7 @@ export default function BuyTimingCard({ data }: { data: TimingData }) {
           <p className="mt-0.5 text-xs text-ink/90">{data.reason}</p>
           <p className="mt-0.5 text-[11px] text-muted">
             {data.product_name}
-            {data.is_synthetic && " · demo data"}
+            {data.is_synthetic && " · Data history (synthetic)"}
           </p>
         </div>
       </header>

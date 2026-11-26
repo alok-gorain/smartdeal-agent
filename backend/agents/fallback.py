@@ -243,6 +243,6 @@ async def run_fallback(session_id: str, text: str, emit: Emit) -> dict:
         if timing:
             msg.append(f"📅 **Buy timing:** {timing['data']['label']} — {timing['data']['reason']}")
     if top.get("is_demo"):
-        msg.append("\n_Prices shown are sample data from the demo catalog._")
+        msg.append("\n_Prices shown come from the local catalog and may not reflect current store prices._")
     msg.append("\nWant the price history chart, or should I narrow these down (brand, budget, features)?")
     return {"content": "\n\n".join(m.strip("\n") for m in msg), "blocks": blocks}

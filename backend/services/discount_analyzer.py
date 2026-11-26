@@ -167,5 +167,5 @@ def summarize_analysis(a: dict) -> str:
     for r in a["by_platform"]:
         lines.append(f"- {r['platform_label']}: {r['label']} — {r['explanation']}")
     if a["primary"].get("is_synthetic"):
-        lines.append("NOTE: based on synthetic demo history.")
+        lines.append("NOTE: based on synthetic Data history, not observed store prices.")
     return "\n".join(lines)

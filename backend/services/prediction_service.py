@@ -136,5 +136,5 @@ def summarize_prediction(p: dict) -> str:
     for u in p.get("upcoming_sales", []):
         lines.append(f"- {u['name']}: starts {u['start_date']} (in {u['days_until']} days), predicted ₹{u['predicted_price']:,.0f}")
     if p.get("is_synthetic"):
-        lines.append("NOTE: based on synthetic demo history.")
+        lines.append("NOTE: based on synthetic Data history, not observed store prices.")
     return "\n".join(lines)

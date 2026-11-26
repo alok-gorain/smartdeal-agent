@@ -173,7 +173,7 @@ async def search_products(
             g["offers"] = [o for o in g["offers"] if o["platform"] in wanted]
         groups = [g for g in groups if g["offers"]]
     await _attach_offers(groups)
-    # Real (live) results before sample data; within each, major retailers and brand stores first
+    # Live results before seeded catalog listings; within each, major retailers and brand stores first
     groups.sort(key=lambda g: (g.get("is_demo", False), not g.get("trusted", True)))
     # Budgets apply to the listed price (card offers aren't available to everyone)
     if budget_min is not None:
@@ -250,7 +250,7 @@ def summarize_groups(groups: list[dict], limit: int = 8) -> str:
             for o in g["offers"]
         )
         rating = f", rating {g['rating']}" if g.get("rating") else ""
-        demo = " [demo data]" if g.get("is_demo") else ""
+        demo = " [sample listing]" if g.get("is_demo") else ""
         unverified = "" if g.get("trusted", True) else " [unverified sellers only]"
         lines.append(f"{i}. [product_id={g.get('product_id')}] {g['name']}{rating}{demo}{unverified} — {stores}")
     return "\n".join(lines)

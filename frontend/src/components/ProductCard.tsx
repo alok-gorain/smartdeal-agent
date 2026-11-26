@@ -45,7 +45,7 @@ export default function ProductCard({ product, rank }: { product: ProductGroup; 
           <span>
             {product.store_count} store{product.store_count > 1 ? "s" : ""}
           </span>
-          {product.is_demo && <span className="rounded bg-raised px-1.5 py-0.5 text-[10px]">demo data</span>}
+          {product.is_demo && <span className="rounded bg-raised px-1.5 py-0.5 text-[10px]">sample listing</span>}
           {product.trusted === false && (
             <span
               className="rounded bg-warn/15 px-1.5 py-0.5 text-[10px] font-medium text-warn"

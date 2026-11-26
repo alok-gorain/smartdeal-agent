@@ -136,7 +136,7 @@ def summarize_history(h: dict) -> str:
         )
     parts = [f"Price history for {h['product_name']} over {h['months']} months ({h['data_points']} data points)."]
     if h["is_synthetic"]:
-        parts.append("NOTE: this history is synthetic demo data.")
+        parts.append("NOTE: Data history is synthetic and may not reflect observed store prices.")
     elif h.get("from_google"):
         parts.append("Source: Google Shopping price history (real prices; each price holds until the store changed it), "
                      "plus SmartDeal's daily tracking.")
